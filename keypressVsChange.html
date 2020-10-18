@@ -1,0 +1,34 @@
+<html>
+    
+    <head>
+        <title>Keypress Vs. Change</title>  
+    </head>
+    
+    <body>
+		<input type="text" id="firstTextBox"/>
+		<input type="text" id="secondTextBox"/>
+		
+		<p id="output"></p>
+	</body>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(init);
+		
+		function init() {
+			$("#firstTextBox").change(textBoxWasChanged);
+			$("#secondTextBox").keypress(textBoxHadKeypress);
+		}
+		
+		function textBoxWasChanged() {
+			$("#output").html("First text box was changed");
+		}
+		
+		function textBoxHadKeypress(e) {
+			$("#output").html("Second text box heard a keypress!: " + String.fromCharCode(e.keyCode));
+		}
+    </script>
+</html>
+	

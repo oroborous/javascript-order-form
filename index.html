@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Shopping Cart Lab</title>
+    <style>
+        td, th {
+            text-align: right;
+        }
+
+        .centerCell {
+            text-align: center;
+        }
+
+        .leftCell {
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+<table width="500">
+    <!-- The table header row -->
+    <tr>
+        <th class="centerCell">Quantity</th>
+        <th class="leftCell">Product</th>
+        <th>Price</th>
+        <th>Total</th>
+    </tr>
+
+    <!-- Product 1 row -->
+    <tr>
+        <td class="centerCell">
+            <input type="number" min="0" step="1" class="qtyInput" id="qtyBook" value="0">
+        </td>
+        <td class="leftCell">
+            <a href="http://www.packtpub.com/learning-jquery-for-interaction-design-web-development-with-javascript/book"
+               target="_blank">Learning jQuery</a>
+        </td>
+        <td>
+            $<span id="priceBook">39.99</span>
+        </td>
+        <td>
+            $<span id="totalBook"></span>
+        </td>
+    </tr>
+
+    <!-- Product 2 row -->
+    <tr>
+        <td class="centerCell">
+            <input type="number" min="0" step="1" class="qtyInput" id="qtyDonation" value="0">
+        </td>
+        <td class="leftCell">
+            <a href="http://www.jquery.com" target="_blank">jQuery Donation</a>
+        </td>
+        <td>
+            $<span id="priceDonation">14.99</span>
+        </td>
+        <td>
+            $<span id="totalDonation"></span>
+        </td>
+    </tr>
+
+    <!-- Total row -->
+    <tr>
+        <td colspan="3">
+            <strong>Grand Total:</strong>
+        </td>
+        <td>
+            $<span id="grandTotal"></span>
+        </td>
+    </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
