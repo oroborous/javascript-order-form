@@ -1,76 +1,70 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <title>Shopping Cart Lab</title>
-    <style>
-        td, th {
-            text-align: right;
-        }
-
-        .centerCell {
-            text-align: center;
-        }
-
-        .leftCell {
-            text-align: left;
-        }
-    </style>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<table width="500">
-    <!-- The table header row -->
-    <tr>
-        <th class="centerCell">Quantity</th>
-        <th class="leftCell">Product</th>
-        <th>Price</th>
-        <th>Total</th>
-    </tr>
+    <div class="container w-50">
+        <h1>jQuery Shopping Cart</h1>
+        <table class="table">
+            <!-- The table header row -->
+            <tr>
+                <th class="centerCell">Quantity</th>
+                <th class="leftCell">Product</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
 
-    <!-- Product 1 row -->
-    <tr>
-        <td class="centerCell">
-            <input type="number" min="0" step="1" class="qtyInput" id="qtyBook" value="0">
-        </td>
-        <td class="leftCell">
-            <a href="http://www.packtpub.com/learning-jquery-for-interaction-design-web-development-with-javascript/book"
-               target="_blank">Learning jQuery</a>
-        </td>
-        <td>
-            $<span id="priceBook">39.99</span>
-        </td>
-        <td>
-            $<span id="totalBook"></span>
-        </td>
-    </tr>
+            <!-- Product 1 row -->
+            <tr>
+                <td class="centerCell">
+                    <input type="number" min="0" id="qtyBook" value="0">
+                </td>
+                <td class="leftCell">
+                    <a href="http://www.packtpub.com/learning-jquery-for-interaction-design-web-development-with-javascript/book"
+                       target="_blank">Learning jQuery</a>
+                </td>
+                <td>
+                    $<span id="priceBook">39.99</span>
+                </td>
+                <td>
+                    $<span id="totalBook"></span>
+                </td>
+            </tr>
 
-    <!-- Product 2 row -->
-    <tr>
-        <td class="centerCell">
-            <input type="number" min="0" step="1" class="qtyInput" id="qtyDonation" value="0">
-        </td>
-        <td class="leftCell">
-            <a href="http://www.jquery.com" target="_blank">jQuery Donation</a>
-        </td>
-        <td>
-            $<span id="priceDonation">14.99</span>
-        </td>
-        <td>
-            $<span id="totalDonation"></span>
-        </td>
-    </tr>
+            <!-- Product 2 row -->
+            <tr>
+                <td class="centerCell">
+                    <input type="number" min="0" id="qtyDonation" value="0">
+                </td>
+                <td class="leftCell">
+                    <a href="http://www.jquery.com" target="_blank">jQuery Donation</a>
+                </td>
+                <td>
+                    $<span id="priceDonation">14.99</span>
+                </td>
+                <td>
+                    $<span id="totalDonation"></span>
+                </td>
+            </tr>
 
-    <!-- Total row -->
-    <tr>
-        <td colspan="3">
-            <strong>Grand Total:</strong>
-        </td>
-        <td>
-            $<span id="grandTotal"></span>
-        </td>
-    </tr>
-</table>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-
-<script src="script.js"></script>
+            <!-- Total row -->
+            <tr>
+                <td colspan="3">
+                    <strong>Grand Total:</strong>
+                </td>
+                <td>
+                    $<span id="grandTotal"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

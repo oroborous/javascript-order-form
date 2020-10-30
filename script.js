@@ -1,48 +1,38 @@
-$(init);
+$(document).ready(
+    function () {
 
-function init() {
-	// Replace these two lines with jQuery
-	document.getElementById("qtyBook").onchange = updateTotal;
-	document.getElementById("qtyDonation").onchange = updateTotal;
-}
 
-// Fill in this function using jQuery only! Do not use document.getElementById()
-function updateTotal() {
-	// STEP ONE
-	
-		// Declare variables for the book quantity and the donation quantity
-	
-		// Get the values of both quantities from the input boxes ("qtyBook" and "qtyDonation")
-	
-		// Parse the values to number types
-	
-	
-	
-	// STEP TWO
-	
-		// Declare variables for the book unit price and the donation unit price
-	
-		// Get the values of both unit prices from the spans ("priceBook" and "priceDonation")
-	
-		// Parse the values to number types
-	
-	
-	
-	// STEP THREE
-	
-		// Declare variables for the book subtotal and the donation subtotal
-	
-		// Calculate the book subtotal and the donation subtotal, assigning to variables
-	
-		// Update the text of the subtotal spans ("totalBook" and "totalDonation") with the calculated subtotal values
-	
-	
-	
-	// STEP FOUR
-	
-		// Declare a variable for the grand total
-	
-		// Calculate the grand total, assigning it to the variable
-	
-		// Update the text of the grand total span ("grandTotal") with the calculated total
-}
+		/****
+		 * ADD EVENT LISTENERS RIGHT HERE
+		 *
+		 * Use jQuery's .change to listen for text changes in
+		 * the two quantity fields.
+		 * 
+		 * Both fields can use the same updateTotal function.
+		 ****/
+
+
+
+		function updateTotal() {
+			// STEP ONE: Books
+			// Get the value of the "qtyBook" input and parse to a number
+			// Get the text of the "priceBook" span and parse to a number
+			// Calculate the book total
+			// Update the text of the "totalBook" span with the book total
+
+
+			// STEP TWO: Donations
+			// Get the value of the "qtyDonation" input and parse to a number
+			// Get the text of the "priceDonation" span and parse to a number
+			// Calculate the donation total
+			// Update the text of the "totalDonation" span with the book total
+
+
+			// STEP THREE: Grand Total
+			// Add the book and donation totals to get the grand total
+			// Update the text of the "grandTotal" span with the grand total
+		}
+    }
+);
+
+
